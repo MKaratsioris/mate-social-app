@@ -69,7 +69,7 @@ TEMPLATES = [
 # }
 DATABASES = {
     'default': {
-        'ENGINE': getenv('DJANGO_DB_ENGINE'),
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': getenv('DJANGO_DB_NAME'),
         'USER': getenv('DJANGO_DB_USER'),
         'PASSWORD': getenv('DJANGO_DB_PASSWORD'),
