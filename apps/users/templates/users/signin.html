@@ -1,0 +1,17 @@
+{% extends 'users/base_users.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Mate | Signin
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+    </br>
+        <form method="POST" class="mt-3 col-6">
+            {% csrf_token %}
+            {{ register_form|crispy }}
+        <button class="btn btn-dark mb-5" type="submit">Signin</button>
+        </form>
+    </div>
+{% endblock content %}

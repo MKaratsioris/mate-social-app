@@ -1,0 +1,53 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="hOc_nFMnmv_yZ4tIe0er">
+    <mxGraphModel dx="1186" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-8" value="Mate v2.0" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="320" y="40" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-14" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="120" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-18" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="220" y="280" width="330" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-10" value="NGINX" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="390" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-11" value="+ Frontend (ReactJS)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="VpJ73iHfvNKKN0SUZJjI-10" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-19" value="Backend API (Django)" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="302.5" y="535" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-20" value="DB (SQLite)" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="337.5" y="680" width="75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-21" value="Docker" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="230" y="290" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-22" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="374.5" y="380" as="sourcePoint" />
+            <mxPoint x="374.5" y="210" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-24" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="375" y="520" as="sourcePoint" />
+            <mxPoint x="374.5" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VpJ73iHfvNKKN0SUZJjI-26" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="375" y="670" as="sourcePoint" />
+            <mxPoint x="374.5" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

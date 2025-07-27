@@ -1,0 +1,45 @@
+.custom-fade-alert {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.custom-fade-alert.fade-out {
+    opacity: 0;
+}
+
+#btn-logout,
+#span-username {
+    color: #BDAFA5;
+}
+
+#navbarNavAltMarkup {
+    justify-content: center !important;
+}
+
+@media (max-width: 991.98px) {
+    #navbarNavAltMarkup {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #navbarNavAltMarkup > .navbar-nav {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #navbarNavAltMarkup > .navbar-nav + .navbar-nav {
+        margin-top: 1rem;
+    }
+    #navbarNavAltMarkup .nav-link,
+    #navbarNavAltMarkup .btn {
+        text-align: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .nav-link,
+    .btn {
+        text-align: center !important;
+    }
+}
