@@ -14,7 +14,7 @@ WSGI_APPLICATION = 'mate.wsgi.application'
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Europe/Prague'
 USE_I18N = True
-USE_TZ = True
+USE_TZ = True # False if psycopg2 gives an error
 STATIC_ROOT = path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [path.join(BASE_DIR, 'static')]
@@ -61,22 +61,22 @@ TEMPLATES = [
         },
     },
 ]
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': getenv('DJANGO_DB_ENGINE'),
-#         'NAME': getenv('DJANGO_DB_NAME'),
-#         'USER': getenv('DJANGO_DB_USER'),
-#         'PASSWORD': getenv('DJANGO_DB_PASSWORD'),
-#         'HOST': getenv('DJANGO_DB_HOST'),
-#         'PORT': getenv('DJANGO_DB_PORT'),
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': getenv('DJANGO_DB_ENGINE'),
+        'NAME': getenv('DJANGO_DB_NAME'),
+        'USER': getenv('DJANGO_DB_USER'),
+        'PASSWORD': getenv('DJANGO_DB_PASSWORD'),
+        'HOST': getenv('DJANGO_DB_HOST'),
+        'PORT': getenv('DJANGO_DB_PORT'),
+    }
+}
 AUTH_PASSWORD_VALIDATORS = [
     { 'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator', },
     { 'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator', },
