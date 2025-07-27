@@ -7,8 +7,8 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = getenv('DJANGO_SECRET_KEY')
 DEBUG = getenv('DJANGO_DEBUG')
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "*"] # add servers domain
-# CSRF_TRUSTED_ORIGINS = ['https://your-base-domain']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "mate-social-app.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ['https://mate-social-app.up.railway.app']
 ROOT_URLCONF = 'mate.urls'
 WSGI_APPLICATION = 'mate.wsgi.application'
 LANGUAGE_CODE = 'en-us'
