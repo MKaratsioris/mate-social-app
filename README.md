@@ -1,5 +1,5 @@
 # Mate
-A social media app that gives to conscious isolation the pedastal.
+A social media app that gives the pedastal to conscious isolation.
 
 ## Demo
 - url: 
